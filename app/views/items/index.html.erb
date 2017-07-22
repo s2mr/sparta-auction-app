@@ -2,8 +2,8 @@
 
 
 <% @items.each do |item| %>
-<li><a href="/items/<%=item.id%>"><%= item.name %></a></li>
+<li><a href="<%=item_path(item.id)%>"><%= item.name %></a></li>
 <% end %>
 
 
-<a href="/items/new">出品する</a>
+<a href="<%=new_item_path%>">出品する</a>

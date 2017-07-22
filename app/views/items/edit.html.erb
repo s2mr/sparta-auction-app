@@ -1,7 +1,7 @@
 <h1>商品更新フォーム</h1>
 <!--local: true でAjaxをオフに -->
 <!-- 非同期通信はしないため  -->
-<!-- url: {action: :update} がないとcreateに飛ばされてしまう-->
+<!-- url: {action: :update} がないとcreateに飛ばされてしまう Routes.rbでresourcesを指定するといらない -->
 <%= form_with model: @item, local: true, url: {action: :update} do |form| %>
   <p>
     商品名：<br>

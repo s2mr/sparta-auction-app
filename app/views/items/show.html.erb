@@ -25,7 +25,7 @@
 </p>
 
 <p>
-  <a href="/items/<%=@item.id%>/edit">編集</a>
+  <a href="<%=edit_item_path(@item.id)%>">編集</a>
   <!--data-method="delete"で削除ボタンを押したときに、deleteメソッドで送信されるようにします。-->
-  <a href="/items/<%=@item.id%>" data-method="delete">削除</a>
+  <a href="<%=item_path(@item.id)%>" data-method="delete">削除</a>
 </p>
