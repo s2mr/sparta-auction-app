@@ -21,11 +21,11 @@
 </p>
 
 <p>
-  <img src="<%= @item.image_url %>">
+  <%= image_tag @item.image_url %>
 </p>
 
 <p>
-  <a href="<%=edit_item_path(@item.id)%>">編集</a>
+  <%= link_to '編集', edit_item_path(@item)%>
   <!--data-method="delete"で削除ボタンを押したときに、deleteメソッドで送信されるようにします。-->
-  <a href="<%=item_path(@item.id)%>" data-method="delete">削除</a>
+  <%= link_to '削除', item_path(@item), method: :delete%>
 </p>
