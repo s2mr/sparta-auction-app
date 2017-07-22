@@ -1,4 +1,4 @@
-<h1>Items#show</h1>
+<a href="/items">TOPへ戻る</a>
 <p>id:<%= @id%></p>
 <p>
   <b>商品名：<%= @item.name %></b>
@@ -26,4 +26,6 @@
 
 <p>
   <a href="/items/<%=@item.id%>/edit">編集</a>
+  <!--data-method="delete"で削除ボタンを押したときに、deleteメソッドで送信されるようにします。-->
+  <a href="/items/<%=@item.id%>" data-method="delete">削除</a>
 </p>
