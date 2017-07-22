@@ -3,4 +3,8 @@ class ItemsController < ApplicationController
     @id = params[:id]
     @item = Item.find(@id)
   end
+  
+  def index
+    @items = Item.all
+  end
 end
